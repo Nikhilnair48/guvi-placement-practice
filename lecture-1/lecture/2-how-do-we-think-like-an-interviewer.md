@@ -11,14 +11,16 @@ Demonstration on Readability & Correctness:
 <!-- [1,2,3,4] -> false -->
 <!-- [1,2,3,2,4] -> true -->
 <!-- Option A -->
+```js
 function hasDuplicates(arr) {
     return new Set(arr).size !== arr.length;
 }
+```
 
 <!-- Option B -->
 <!-- Input: [1,2,3,2,4]; return true -->
 <!-- Set variable seen: (1,2,3) -->
-
+```js
 /**
  * hasDuplicates - checks if an array has duplicate values
  * 
@@ -40,3 +42,4 @@ function hasDuplicates(arr) {
     }
     return false;
 }
+```

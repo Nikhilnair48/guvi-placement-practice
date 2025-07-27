@@ -13,6 +13,8 @@ Notation: O(1) - constant
     - this says that your program runs once in worst case
 
 Examples of O(1):
+
+```js
 const nums = [1,2,3];   // constant time
 nums.push(4);           // constant time; nums: [1,2,3,4]
 nums.pop();             // constant time; nums: [1,2,3]
@@ -21,6 +23,7 @@ nums[0];                // constant time;
 const map = {};
 map["key"] = 42;         //constant time
 console.log(map["key"]);
+```
 
 Notation: O(n) - linear
 // Looping over an array
@@ -36,6 +39,7 @@ logArrayToConsole(randomNumbers);
 // Quadratic time complexty
 Notation: n*n => O(n^2)
 
+```js
 const arrayOfNumbers = [1,2,3,4,5];
 <!-- Nested loop -->
 for(let i = 0; i < arrayOfNumbers.length; i++) {
@@ -43,6 +47,8 @@ for(let i = 0; i < arrayOfNumbers.length; i++) {
         console.log(arrayOfNumbers[i], arrayOfNumbers[j]);
     }
 }
+```
+
 <!-- n = 5; 5 * 5 -> 25 -->
 <!-- i = 1; 2 is the element; 
             output: 2,1
@@ -53,6 +59,7 @@ for(let i = 0; i < arrayOfNumbers.length; i++) {
  -->
 
 Notation: n*n*n => O(n^3)
+```js
 for(let i = 0; i < arrayOfNumbers.length; i++) {
     let j = 0; 
     while(j < arrayOfNumbers.length) {
@@ -62,6 +69,7 @@ for(let i = 0; i < arrayOfNumbers.length; i++) {
         j++;
     }
 }
+```
 <!-- Input size is 5 -> out loop runs 5 times, 
                             for each time, inner loop runs 5 times
                                 for each time, nested inner loop runes 5 times
@@ -99,6 +107,8 @@ Concept: Divide & Conquer
 <!-- O(2 ^ n) -->
 Fibonacci Sequence - 0 1 1 2 3 5 8....
 <!-- Recursion to solve this problem -->
+
+```js
 function fib(n) {
     <!-- base condition -->
     if(n <= 1) return n;
@@ -106,7 +116,7 @@ function fib(n) {
 }
 
 fib(10000);
-
+```
 For any number n, for each call to the fib function two more calls will spawn
 Time complexity: Big O(2 ^ n)
 
