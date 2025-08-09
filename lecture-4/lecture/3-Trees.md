@@ -35,7 +35,7 @@ Opertion            Average case        Notes
 Search              O(log n)
 Insert              O(log n)
 Delete              O(log n)
-Traversal           O(n)                    Pre-order traversal, post-order traversal, in-order traversal
+Traversal           O(n)                    Pre-order traversal, post-order traversal, in-order traversal, level-order traversal
 
 
 Pre-order traversal: 7, 3, 1, 5, 10, 8, 11
