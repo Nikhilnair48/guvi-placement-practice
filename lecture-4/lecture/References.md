@@ -8,6 +8,8 @@
 
 - [Stacks](https://www.cs.usfca.edu/~galles/visualization/StackArray.html)
 
+- [Youtube playlist from William Fiset](https://www.youtube.com/playlist?list=PLDV1Zeh2NRsC0FVi9Rshi-5fFU1QwcFQ1)
+
 ## Trees
 - [Stanford University: CS106B notes on Trees](https://web.stanford.edu/class/archive/cs/cs106b/cs106b.1218/section/section7/)
 
